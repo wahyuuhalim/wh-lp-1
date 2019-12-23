@@ -1,0 +1,243 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: MesloLGS NF;
+  font-size: 30px;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(img/banner.jpg);
+  background-size: cover;
+  height: 594px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: 
+  linear-gradient(to bottom, rgba(0,0,0,0.7),
+   rgba(0,0,0,0.2));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: #ffffff;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px 
+  rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/* info panel */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0,0,0,0.7) ;
+  border-radius: 12px;
+  margin-top: -110px;
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+/* workingspace */
+.workingspace {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.workingspace img {
+  width: 600px;
+}
+
+.workingspace h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.workingspace h3 span {
+  font-weight: 500;
+}
+
+.workingspace p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 30px 0;
+}
+
+.btn-gallery {
+  text-transform: uppercase;
+  border-radius: 9px;
+  background-color: #BCB198;
+  color: #ffffff;
+}
+
+.btn-gallery:hover {
+  background-color: #BCB198;
+  color: #ffffff;
+}
+
+/* testimonial*/
+.testimonial {
+margin-top: 180px;
+}
+
+.testimonial h5 {
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.testimonial figure img{
+  width: 60px;
+  height: 60px;
+  margin: 25px 10px 10px;
+  opacity: 0.6;
+}
+
+.testimonial figure img.utama {
+  width: 90px;
+  height: 90px;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.testimonial figure h5 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+}
+
+.testimonial figure p {
+  font-size: 12px;
+  color: #acacac;
+  margin-top: -5px;
+}
+
+.testimonial figcaption {
+  text-align: center;
+}
+
+
+/* footer */
+.footer {
+  margin-top: 100px;
+}
+
+.footer p {
+  color: #acacac;
+  font-size: 15px;
+}
+
+/* Utility */
+.btn-our-work {
+  text-transform: uppercase;
+  border-radius: 9px;
+  background-color:  #BCB198;
+  color: #ffffff; 
+}
+
+.btn-our-work:hover {
+  background-color: #BCB198;
+  color: #ffffff;
+}
+
+
+.btn-join-us {
+  text-transform: uppercase;
+  border-radius: 9px;
+  border: 3px solid #BCB198;
+  color: #ffffff;
+  background-color: #BCB198; 
+}
+
+.btn-join-us:hover {
+  background-color: #BCB198;
+  color: #ffffff;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand, .nav-link {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 1px 
+    rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #BCB198;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 694px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+
+  .workingspace {
+    text-align: left;
+  }
+  
+  .testimonial h5 {
+    font-size: 25px;
+  }
+}
+
